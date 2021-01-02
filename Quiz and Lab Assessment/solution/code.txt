@@ -1,0 +1,7 @@
+1 : SELECT job_id,Last_Name AS Name, SUM(salary), AVG(salary), MAX(salary), MIN(salary) FROM employees GROUP BY job_id
+
+2 : Select Last_Name as Name, Manager_ID as Manager_Number , MAX(salary) from employees where Manager_ID is not null group by Manager_ID having min(salary) > 6000 order by min(salary) desc
+​
+4 : SELECT job_id,Last_Name as Name, COUNT(*)
+FROM employees
+GROUP BY job_id;
